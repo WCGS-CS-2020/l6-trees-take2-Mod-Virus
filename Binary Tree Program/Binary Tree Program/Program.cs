@@ -31,7 +31,28 @@ namespace Binary_Tree_Program
         
         public void addNode(string item) 
         {
-            left = new Node(item);
+            if (item < this.item)
+            {
+                if (left == null)
+                {
+                    left = new Node(item);
+                }
+                else
+                {
+                    left.addNode(item);
+                }
+            }
+            else
+            {
+                if (right == null)
+                {
+                    right = new Node(item);
+                }
+                else
+                {
+                    right.addNode(item);
+                }
+            }
         }
         
         public Boolean findNode(string item) 
