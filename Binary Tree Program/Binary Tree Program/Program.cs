@@ -26,12 +26,12 @@ namespace Binary_Tree_Program
         //Methods
         public Node(string item) 
         {
-            
+            this.item = item;
         }
         
         public void addNode(string item) 
         {
-            
+            left = new Node(item);
         }
         
         public Boolean findNode(string item) 
