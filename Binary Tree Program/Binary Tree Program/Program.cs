@@ -78,7 +78,7 @@ namespace Binary_Tree_Program
             Node root = null;
 
             string[] months = { "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" };
-
+            int[] numArray = { 22, 45, 12, 67, 84, 56, 444, 5456, 6, 43, 36, 47 };
 
             // process all the nodes on the array
             //
