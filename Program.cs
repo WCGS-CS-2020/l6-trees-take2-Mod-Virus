@@ -26,7 +26,7 @@ namespace Binary_Tree_Programming
 
         public void addNode(string item)
         {
-            //test edit comment
+
             if (item < this.item)
             {
                 if (left == null)
