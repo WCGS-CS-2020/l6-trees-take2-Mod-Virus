@@ -1,16 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace L6Trees
-{
+namespace Binary_Tree_Programming
+{   
+    /*Tasks:
+      1) Complete the implementation of the Node methods
+      2) Print out the tree using the different tree traversal metods
+      3) Test findNote() and deleteNode()*/
 
-    /*
-     * Tasks:
-     * 1) Complete the implementation of the Node methods
-     * 2) Print out the tree using the different tree traversal metods
-     * 3) Test findNote() and deleteNode()
-     *
-     *
-     */
     class Node
     {
         // Attributes
@@ -19,10 +19,45 @@ namespace L6Trees
         private string item;
 
         //Methods
-        public Node(string item) { }
-        public void addNode(string item) {}
-        public Boolean findNode(string item) { return true; }
+        public Node(string item) 
+        {
+            this.item = item;
+        }
+
+        public void addNode(string item)
+        {
+
+            if (item < this.item)
+            {
+                if (left == null)
+                {
+                    left = new Node(item);
+                }
+                else
+                {
+                    left.addNode(item);
+                }
+            }
+            else
+            {
+                if (right == null)
+                {
+                    right = new Node(item);
+                }
+                else
+                {
+                    right.addNode(item);
+                }
+            }
+        }
+
+        public Boolean findNode(string item) 
+        { 
+            return true;         
+        }
+        
         public Boolean deleteNote(string item) { return true; }
+        
         void printTree() { }
     }
 
@@ -52,3 +87,4 @@ namespace L6Trees
         }
     }
 }
+
