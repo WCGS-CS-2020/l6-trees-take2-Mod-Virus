@@ -24,11 +24,30 @@ namespace Binary_Tree_Program
         private string item;
 
         //Methods
-        public Node(string item) { }
-        public void addNode(string item) { }
-        public Boolean findNode(string item) { return true; }
-        public Boolean deleteNote(string item) { return true; }
-        void printTree() { }
+        public Node(string item) 
+        {
+            
+        }
+        
+        public void addNode(string item) 
+        {
+            
+        }
+        
+        public Boolean findNode(string item) 
+        { 
+            return true; 
+        }
+        
+        public Boolean deleteNote(string item) 
+        { 
+            return true; 
+        }
+        
+        void printTree() 
+        { 
+            
+        }
     }
 
     class Program
