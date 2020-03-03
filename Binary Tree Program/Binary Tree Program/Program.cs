@@ -42,7 +42,7 @@ namespace Binary_Tree_Program
                     left.addNode(item);
                 }
             }
-            else (item > this.item)
+            else if (item > this.item)
             {
                 if (right == null)
                 {
