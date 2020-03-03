@@ -57,7 +57,7 @@ namespace Binary_Tree_Program
         
         public Boolean findNode(int item) 
         {
-            if (item = this.item)
+            if (item == this.item)
             {
                 return (true);
             }
@@ -72,7 +72,8 @@ namespace Binary_Tree_Program
             else
             {
                 return false;    
-            }            
+            }
+            return true;
         }
         
         public Boolean deleteNote(int item) 

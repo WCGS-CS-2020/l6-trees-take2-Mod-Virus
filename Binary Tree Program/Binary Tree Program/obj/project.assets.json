@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Computer Science\\GitHub\\l6-trees-take2-Mod-Virus\\Binary Tree Program\\Binary Tree Program\\Binary Tree Program.csproj",
+      "projectUniqueName": "C:\\Users\\Tin-Chi Wong\\Desktop\\l6-trees-take2-Mod-Virus\\Binary Tree Program\\Binary Tree Program\\Binary Tree Program.csproj",
       "projectName": "Binary Tree Program",
-      "projectPath": "E:\\Computer Science\\GitHub\\l6-trees-take2-Mod-Virus\\Binary Tree Program\\Binary Tree Program\\Binary Tree Program.csproj",
+      "projectPath": "C:\\Users\\Tin-Chi Wong\\Desktop\\l6-trees-take2-Mod-Virus\\Binary Tree Program\\Binary Tree Program\\Binary Tree Program.csproj",
       "packagesPath": "C:\\Users\\Tin-Chi Wong\\.nuget\\packages\\",
-      "outputPath": "E:\\Computer Science\\GitHub\\l6-trees-take2-Mod-Virus\\Binary Tree Program\\Binary Tree Program\\obj\\",
+      "outputPath": "C:\\Users\\Tin-Chi Wong\\Desktop\\l6-trees-take2-Mod-Virus\\Binary Tree Program\\Binary Tree Program\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
