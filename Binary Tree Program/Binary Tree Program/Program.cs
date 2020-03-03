@@ -21,15 +21,15 @@ namespace Binary_Tree_Program
         // Attributes
         private Node left;
         private Node right;
-        private string item;
+        private int item;
 
         //Methods
-        public Node(string item) 
+        public Node(int item) 
         {
             this.item = item;
         }
         
-        public void addNode(string item) 
+        public void addNode(int item) 
         {
             if (item < this.item)
             {
@@ -42,7 +42,7 @@ namespace Binary_Tree_Program
                     left.addNode(item);
                 }
             }
-            else
+            else (item > this.item)
             {
                 if (right == null)
                 {
@@ -55,12 +55,12 @@ namespace Binary_Tree_Program
             }
         }
         
-        public Boolean findNode(string item) 
+        public Boolean findNode(int item) 
         { 
             return true; 
         }
         
-        public Boolean deleteNote(string item) 
+        public Boolean deleteNote(int item) 
         { 
             return true; 
         }
@@ -82,12 +82,12 @@ namespace Binary_Tree_Program
 
             // process all the nodes on the array
             //
-            foreach (var mon in months)
+            foreach (var num in numArray)
             {
                 if (root == null)
-                    root = new Node(mon);
+                    root = new Node(num);
                 else
-                    root.addNode(mon);
+                    root.addNode(num);
             }
 
             // print out the tree using different traversal methods
