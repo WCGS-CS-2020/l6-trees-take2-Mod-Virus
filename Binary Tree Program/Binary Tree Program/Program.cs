@@ -1,9 +1,10 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Threading;
+using Ivans_Library;
 
 namespace Binary_Tree_Program
 {
@@ -24,12 +25,12 @@ namespace Binary_Tree_Program
         private int item;
 
         //Methods
-        public Node(int item) 
+        public Node(int item)
         {
             this.item = item;
         }
-        
-        public void addNode(int item) 
+
+        public void addNode(int item)
         {
             if (item < this.item)
             {
@@ -54,8 +55,8 @@ namespace Binary_Tree_Program
                 }
             }
         }
-        
-        public Boolean findNode(int item) 
+
+        public Boolean findNode(int item)
         {
             bool holder;
             if (item == this.item)
@@ -74,18 +75,18 @@ namespace Binary_Tree_Program
             }
             else
             {
-                return false;    
+                return false;
             }
         }
-        
-        public Boolean deleteNote(int item) 
-        { 
-            return true; 
+
+        public Boolean deleteNote(int item)
+        {
+            return true;
         }
-        
-        void printTree() 
-        { 
-            
+
+        void printTree()
+        {
+
         }
     }
 
@@ -109,10 +110,23 @@ namespace Binary_Tree_Program
             }
 
             // print out the tree using different traversal methods
-            //
-
             // Test the findNote() and deleteNode()
+            string[] options = { "Print Node", "Find Node", "Delete Node", "Exit" };
+            bool end = false;
+
+            while (end == false)
+            { 
+                Function.Underline("Binary Tree Program");
+                Console.WriteLine("Choose an option:");
+
+                for (int i = 0; i < options.Length;i++)
+                {
+                  Console.WriteLine(String.Format("{0}. {1}",(i+1),options[i]));  
+                }
+            }
+
+            
+            
         }
     }
 }
-
