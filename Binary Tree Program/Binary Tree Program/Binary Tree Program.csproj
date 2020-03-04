@@ -6,4 +6,10 @@
     <RootNamespace>Binary_Tree_Program</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="Ivans Library">
+      <HintPath>..\..\Ivans Library\Ivans Library\bin\Debug\Ivans Library.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

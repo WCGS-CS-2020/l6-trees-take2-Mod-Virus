@@ -84,7 +84,7 @@ namespace Binary_Tree_Program
             return true;
         }
 
-        void printTree()
+        public void printTree()
         {
 
         }
@@ -112,6 +112,7 @@ namespace Binary_Tree_Program
             // print out the tree using different traversal methods
             // Test the findNote() and deleteNode()
             string[] options = { "Print Node", "Find Node", "Delete Node", "Exit" };
+            int item;
             bool end = false;
 
             while (end == false)
@@ -122,6 +123,32 @@ namespace Binary_Tree_Program
                 for (int i = 0; i < options.Length;i++)
                 {
                   Console.WriteLine(String.Format("{0}. {1}",(i+1),options[i]));  
+                }
+
+                int selection = Function.Int_Check();
+                selection = Function.Range_Check(selection, 1, 4);
+
+                switch (selection)
+                {
+                    case 1:
+                        root.printTree();
+                        break;
+
+                    case 2:
+                        Console.WriteLine("Please enter the node you would like to find:");
+                        item = int.Parse(Console.ReadLine());
+                        root.findNode(item);
+                        break;
+
+                    case 3:
+                        Console.WriteLine("Please enter the node you would like to delete:");
+                        item = int.Parse(Console.ReadLine());
+                        root.deleteNote(item);
+                        break;
+
+                    case 4:
+                        end = true;
+                        break;
                 }
             }
 
