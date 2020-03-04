@@ -57,23 +57,25 @@ namespace Binary_Tree_Program
         
         public Boolean findNode(int item) 
         {
+            bool holder;
             if (item == this.item)
             {
                 return (true);
             }
             else if (item < this.item)
             {
-                left.findNode(item);
+                holder = left.findNode(item);
+                return (holder);
             }
             else if (item > this.item)
             {
-                right.findNode(item);
+                holder = right.findNode(item);
+                return (holder);
             }
             else
             {
                 return false;    
             }
-            return true;
         }
         
         public Boolean deleteNote(int item) 
