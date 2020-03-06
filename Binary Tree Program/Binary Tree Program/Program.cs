@@ -84,17 +84,22 @@ namespace Binary_Tree_Program
             return true;
         }
 
-        public void printTree(int item)
-        {            
-            If (node.left != null)
+        protected void postTraverse(int )
+        { 
+            if (left != null)
             {
-            post(node.left);
+            postTraverse(item.left);
             }
-            If (node.right != null)
+            if (right != null)
             {
-                post(node.right);
+                postTraverse(node.right);
             }
             Console.WriteLine(node);
+        }
+
+        public void printTree(int item)
+        {            
+            
         }
     }
 
