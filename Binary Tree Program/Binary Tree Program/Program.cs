@@ -84,22 +84,42 @@ namespace Binary_Tree_Program
             return true;
         }
 
-        protected void postTraverse(int )
+        protected void postTraverse()
         { 
             if (left != null)
             {
-            postTraverse(item.left);
+                left.postTraverse();
             }
             if (right != null)
             {
-                postTraverse(node.right);
+                right.postTraverse();
             }
-            Console.WriteLine(node);
+            Console.WriteLine(item);
         }
 
-        public void printTree(int item)
-        {            
-            
+        public void printTree()
+        {
+            Console.WriteLine("How would you like to print the tree?");
+            string[] options = { "Pre Order Traversal", "In Order Traversal", "Post Order Traversal"};
+            for (int i = 0; i < options.Length; i++)
+            {
+                Console.WriteLine(String.Format("{0}. {1}", (i + 1), options[i]));
+            }
+            int selection = Function.Int_Check();
+            selection = Function.Range_Check(selection, 1, 3);
+
+            switch (selection)
+            {
+                case 1:
+                    break;
+
+                case 2:
+                    break;
+
+                case 3:
+                    postTraverse();
+                    break;
+            }
         }
     }
 
