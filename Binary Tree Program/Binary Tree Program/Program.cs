@@ -94,7 +94,7 @@ namespace Binary_Tree_Program
             {
                 right.postTraverse();
             }
-            Console.WriteLine(item);
+            Console.Write(item + " ");
         }
 
         public void printTree()
@@ -107,7 +107,7 @@ namespace Binary_Tree_Program
             }
             int selection = Function.Int_Check();
             selection = Function.Range_Check(selection, 1, 3);
-
+            Console.WriteLine();
             switch (selection)
             {
                 case 1:
@@ -120,6 +120,8 @@ namespace Binary_Tree_Program
                     postTraverse();
                     break;
             }
+            Console.WriteLine();
+            Console.WriteLine();
         }
     }
 
@@ -161,22 +163,29 @@ namespace Binary_Tree_Program
                 int selection = Function.Int_Check();
                 selection = Function.Range_Check(selection, 1, 4);
 
+                Console.Clear();
+                Function.Underline("Binary Tree Program");
+
                 switch (selection)
                 {
                     case 1:
                         root.printTree();
+                        Thread.Sleep(5000);
+                        Console.Clear();
                         break;
 
                     case 2:
                         Console.WriteLine("Please enter the node you would like to find:");
                         item = int.Parse(Console.ReadLine());
                         root.findNode(item);
+                        Console.Clear();
                         break;
 
                     case 3:
                         Console.WriteLine("Please enter the node you would like to delete:");
                         item = int.Parse(Console.ReadLine());
                         root.deleteNote(item);
+                        Console.Clear();
                         break;
 
                     case 4:
