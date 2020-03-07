@@ -84,17 +84,44 @@ namespace Binary_Tree_Program
             return true;
         }
 
-        protected void postTraverse()
+        protected void postOrderTraverse()
         { 
             if (left != null)
             {
-                left.postTraverse();
+                left.postOrderTraverse();
             }
             if (right != null)
             {
-                right.postTraverse();
+                right.postOrderTraverse();
             }
             Console.Write(item + " ");
+        }
+
+        protected void preOrderTraverse()
+        {
+            Console.Write(item + " ");
+            if (left != null)
+            {
+                left.postOrderTraverse();
+            }
+            if (right != null)
+            {
+                right.postOrderTraverse();
+            }            
+        }
+
+        protected void inOrderTraverse()
+        {
+            if (left != null)
+            {
+                left.postOrderTraverse();
+            }
+            Console.Write(item + " ");
+            if (right != null)
+            {
+                right.postOrderTraverse();
+            }
+            
         }
 
         public void printTree()
@@ -111,17 +138,17 @@ namespace Binary_Tree_Program
             switch (selection)
             {
                 case 1:
+                    preOrderTraverse();
                     break;
 
                 case 2:
+                    inOrderTraverse();
                     break;
 
                 case 3:
-                    postTraverse();
+                    postOrderTraverse();
                     break;
-            }
-            Console.WriteLine();
-            Console.WriteLine();
+            }            
         }
     }
 
